@@ -1,25 +1,20 @@
 [package]
-name = "proc_static_assertions"
-version = "0.0.0"
+name = "proc_static_assertions_next"
+version = "0.0.1"
 authors = ["Nikolai Vazquez"]
 license = "MIT OR Apache-2.0"
 readme = "../README.md"
-homepage = "https://github.com/nvzqz/static-assertions-rs"
-repository = "https://github.com/nvzqz/static-assertions-rs"
-documentation = "https://docs.rs/proc_static_assertions/"
+homepage = "https://github.com/scuffletv/static-assertions"
+repository = "https://github.com/scuffletv/static-assertions"
+documentation = "https://docs.rs/proc_static_assertions_next"
 categories = ["no-std", "rust-patterns", "development-tools::testing"]
 keywords = ["assert", "static", "testing"]
 description = "Compile-time assertions via procedural macros."
 include = ["Cargo.toml", "src/**/*.rs", "README.md", "CHANGELOG.md", "LICENSE*"]
+edition = "2021"
 
 [lib]
 proc-macro = true
-
-[badges]
-travis-ci = { repository = "nvzqz/static-assertions-rs" }
-is-it-maintained-open-issues = { repository = "nvzqz/static-assertions-rs" }
-is-it-maintained-issue-resolution = { repository = "nvzqz/static-assertions-rs" }
-maintenance = { status = "passively-maintained" }
 
 [features]
 nightly = []

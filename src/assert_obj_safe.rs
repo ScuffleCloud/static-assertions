@@ -71,6 +71,6 @@
 #[macro_export]
 macro_rules! assert_obj_safe {
     ($($xs:path),+ $(,)?) => {
-        $(const _: Option<&$xs> = None;)+
+        $(const _: Option<&dyn $xs> = None;)+
     };
 }

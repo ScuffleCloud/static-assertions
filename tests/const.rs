@@ -2,10 +2,10 @@
 #![deny(unsafe_code)]
 
 #[macro_use]
-extern crate static_assertions;
+extern crate static_assertions_next;
 
 const_assert!(true && (true != false));
-const_assert!((true && true) != false);
+const_assert!(true && true);
 const_assert_eq!(false, false);
 
 #[allow(dead_code)]

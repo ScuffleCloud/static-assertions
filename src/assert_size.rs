@@ -90,7 +90,7 @@ macro_rules! assert_eq_size {
 #[macro_export]
 macro_rules! assert_size_eq_ptr {
     ($x:expr, $($xs:expr),+ $(,)?) => {
-        #[allow(unknown_lints, unsafe_code, forget_copy, useless_transmute)]
+        #[allow(unknown_lints, unsafe_code, forget_copy, useless_transmute, clippy::transmute_num_to_bytes)]
         let _ = || unsafe {
             use $crate::_core::{mem, ptr};
             let mut copy = ptr::read($x);

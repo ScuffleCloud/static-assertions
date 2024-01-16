@@ -2,7 +2,7 @@
 #![deny(unsafe_code)]
 
 #[macro_use]
-extern crate static_assertions;
+extern crate static_assertions_next;
 
 assert_obj_safe!(core::fmt::Debug, Send, Sync);
 

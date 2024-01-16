@@ -2,7 +2,7 @@
 #![deny(unsafe_code)]
 
 #[macro_use]
-extern crate static_assertions;
+extern crate static_assertions_next;
 
 #[allow(dead_code)]
 enum Foo {
@@ -25,7 +25,6 @@ mod m {
     }
 }
 
-#[allow(dead_code)]
 use m::Bar as Baz;
 
 assert_fields!(m::Bar<str>: inner, nul);
